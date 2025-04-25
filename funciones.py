@@ -18,11 +18,11 @@ def mostrar_menu():
     return eleccion
 
 
-def seleccionar_modo(eleccion, id_tweet, lista_tweet):
+def seleccionar_modo(eleccion, id_tweet, lista_tweets):
     if eleccion == "1":
-        id_tweet = crear_tweet(id_tweet, lista_tweet)
+        id_tweet = crear_tweet(id_tweet, lista_tweets)
     elif eleccion == "2":
-        print("buscar_tweet()")
+        buscar_tweet( id_tweet, lista_tweets)
     else:
         print("eliminar_tweet()")
     return id_tweet
@@ -44,3 +44,18 @@ def crear_tweet(id_tweet, lista_tweets):
             print(f"OK {id_tweet}")
             invalido = False
     return id_tweet
+
+
+def buscar_tweet(id, lista):
+    palabras = input("Ingrese la/s palabra/s clave a buscar:")
+
+
+
+def tokenizar(tweet):
+    token_por_pal = []
+    token_x_seg = []
+    for palabra in tweet:
+        token_por_pal.append(palabra)
+        for c in palabra:
+            
+
