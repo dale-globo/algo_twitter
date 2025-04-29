@@ -47,15 +47,28 @@ def crear_tweet(id_tweet, lista_tweets):
 
 
 def buscar_tweet(id, lista):
-    palabras = input("Ingrese la/s palabra/s clave a buscar:")
-
+    entrada = input("Ingrese la/s palabra/s clave a buscar:")
+    tk_seg, tk_pal = tokenizar(entrada)
+    print(tk_pal,tk_seg)
+    for s in tk_seg:
+        if s in lista.values 
+            print(f"Encontrado: ID {id_tweet}, Tweet original: {valores[0]}")
+            break
+        else:
+            print("No se encontró ningún tweet con ese texto normalizado.")
 
 
 def tokenizar(tweet):
-    token_por_pal = []
+    token_por_pal = tweet.split()
     token_x_seg = []
-    for palabra in tweet:
-        token_por_pal.append(palabra)
-        for c in palabra:
-            if palabra[]
-
+    for palabra in token_por_pal:
+        if len(palabra) >= 3:
+            i = 0
+            while i <= len(palabra) - 3:
+                j = i + 3
+                while j <= len(palabra):
+                    segmento = palabra[i:j]
+                    token_x_seg.append(segmento)
+                    j += 1
+                i += 1         
+    return token_x_seg, token_por_pal

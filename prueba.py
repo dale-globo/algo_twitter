@@ -1,5 +1,5 @@
 
-def tokenizar(tweet):
+"""def tokenizar(tweet):
     token_por_pal = tweet.split()
     token_x_seg = []
     segmento = ""
@@ -18,7 +18,7 @@ def tokenizar(tweet):
 
 tweet = input("ingrese twit: ")
 respuesta = tokenizar(tweet)
-print(respuesta)
+print(respuesta)"""
 
 #########################################
 
@@ -37,9 +37,8 @@ def tokenizar(tweet):
                     j += 1
                 i += 1
                 
-    return token_x_seg
+    return token_x_seg, token_por_pal
 
-# Ejecución
 tweet = input("Ingrese tweet: ")
 respuesta = tokenizar(tweet)
 print(respuesta)
